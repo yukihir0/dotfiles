@@ -1,0 +1,8 @@
+[user]
+	name = yukihir0
+	email = yukihiro.cotori@gmail.com
+[color]
+	ui = auto
+[core]
+	excludesfile = /Users/yukihir0/.gitignore
+	editor = /Applications/MacVim.app/Contents/MacOS/Vim
