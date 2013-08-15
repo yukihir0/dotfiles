@@ -9,3 +9,8 @@ eval "$(rbenv init -)"
 # ndenv
 export PATH=$PATH:$HOME/.ndenv/bin
 eval "$(ndenv init -)"
+
+# plenv
+export PATH=$PATH:$HOME/.plenv/bin
+eval "$(plenv init -)"
+
