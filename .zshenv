@@ -14,3 +14,7 @@ eval "$(ndenv init -)"
 export PATH=$PATH:$HOME/.plenv/bin
 eval "$(plenv init -)"
 
+# pyenv
+export PATH=$PATH:$HOME/.pyenv/bin
+eval "$(pyenv init -)"
+
