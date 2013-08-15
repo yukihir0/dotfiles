@@ -4,17 +4,18 @@ if [ -f /Applications/MacVim.app/Contents/MacOS/Vim ]; then
 fi
 
 # rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # ndenv
-export PATH=$PATH:$HOME/.ndenv/bin
+export PATH="$HOME/.ndenv/bin:$PATH"
 eval "$(ndenv init -)"
 
 # plenv
-export PATH=$PATH:$HOME/.plenv/bin
+export PATH="$HOME/.plenv/bin:$PATH"
 eval "$(plenv init -)"
 
 # pyenv
-export PATH=$PATH:$HOME/.pyenv/bin
+export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 
