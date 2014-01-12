@@ -3,3 +3,5 @@
 .vim/bundle
 .vim/.netrwhist
 .vendor/bundle
+.ssh/*
+!.ssh/config

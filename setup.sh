@@ -5,6 +5,7 @@ current_dir=$(cd $(dirname $0); pwd)
 # dir
 dot_files+=(".bundle")
 dot_files+=(".vim")
+dot_files+=(".ssh")
 
 # file
 dot_files+=(".gitconfig")
@@ -21,7 +22,7 @@ do
     then
         echo "$HOME/$dot_file is already exits."
     else
-        if [ "$dot_file"=".gitignore" ]
+        if [ "$dot_file" = ".gitignore" ]
         then
             command="ln -s $current_dir/gitignore $HOME/.gitignore"
         else
