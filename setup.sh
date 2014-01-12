@@ -21,7 +21,12 @@ do
     then
         echo "$HOME/$dot_file is already exits."
     else
-        command="ln -s $current_dir/$dot_file $HOME/$dot_file"
+        if [ "$dot_file"=".gitignore" ]
+        then
+            command="ln -s $current_dir/gitignore $HOME/.gitignore"
+        else
+            command="ln -s $current_dir/$dot_file $HOME/$dot_file"
+        fi
         `$command`
         echo $command
     fi
