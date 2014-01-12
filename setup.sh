@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-current_dir=`pwd`
+current_dir=$(cd $(dirname $0); pwd)
 
 # dir
 dot_files+=(".bundle")
@@ -13,6 +13,7 @@ dot_files+=(".tmux.conf")
 dot_files+=(".vimrc")
 dot_files+=(".zshenv")
 dot_files+=(".zshrc")
+dot_files+=(".gemrc")
 
 for dot_file in "${dot_files[@]}"
 do
