@@ -38,13 +38,6 @@ do
 done
 
 echo
-echo "--- build tmux-MacOSX-pasteboard ---"
-
-git_repository="tmux-MacOSX-pasteboard"
-target="reattach-to-user-namespace"
-dest="/usr/local/bin"
-cd $git_repository
-make $target
-echo "copy $target to $dest."
-sudo cp $target $dest
+echo "--- copy tmux-pbcopy ---"
+sudo cp tmux-pbcopy /usr/local/bin
 

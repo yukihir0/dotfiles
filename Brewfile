@@ -9,6 +9,7 @@ install zsh
 install git
 install openssl
 install tmux
+install reattach-to-user-namespace
 install mecab
 install mysql
 
