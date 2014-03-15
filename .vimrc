@@ -72,9 +72,9 @@ set encoding=utf-8
 set fileencoding=utf-8
 set fileformat=unix
 set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 
 noremap j gj
 noremap k gk
