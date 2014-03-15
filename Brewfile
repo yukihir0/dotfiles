@@ -5,13 +5,13 @@ update
 upgrade
 
 # install formula
-install zsh
-install git
-install openssl
-install tmux
-install reattach-to-user-namespace
-install mecab
-install mysql
+install zsh || true
+install git || true
+install openssl || true
+install tmux || true
+install reattach-to-user-namespace || true
+install mecab || true
+install mysql || true
 
 # install homebrew-cask
 tap phinze/homebrew-cask
