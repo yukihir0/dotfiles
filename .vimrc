@@ -1,3 +1,5 @@
+set notitle
+
 set nocompatible
 filetype off
  
@@ -21,6 +23,8 @@ NeoBundle 'Shougo/vimproc', {
 NeoBundle 'tomasr/molokai'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'Lokaltog/powerline'
 
 syntax on
 filetype plugin indent on
@@ -89,3 +93,8 @@ autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:las
 "clipboard
 set clipboard=unnamed,autoselect
 
+"powerline
+set laststatus=2
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+let g:Powerline_symbols = 'fancy'
+set noshowmode
