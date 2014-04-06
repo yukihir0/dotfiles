@@ -28,6 +28,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'basyura/unite-rails'
 NeoBundle 'Lokaltog/powerline'
 NeoBundle 'tpope/vim-endwise'
+NeoBundle 'vim-scripts/ruby-matchit'
 
 syntax on
 filetype plugin indent on
