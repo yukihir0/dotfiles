@@ -25,6 +25,7 @@ NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'Lokaltog/powerline'
+NeoBundle 'tpope/vim-endwise'
 
 syntax on
 filetype plugin indent on
