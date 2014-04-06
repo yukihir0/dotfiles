@@ -24,6 +24,8 @@ NeoBundle 'tomasr/molokai'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'basyura/unite-rails'
 NeoBundle 'Lokaltog/powerline'
 NeoBundle 'tpope/vim-endwise'
 
