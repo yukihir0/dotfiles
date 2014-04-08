@@ -1,3 +1,5 @@
+set notitle
+
 set nocompatible
 filetype off
  
@@ -21,6 +23,12 @@ NeoBundle 'Shougo/vimproc', {
 NeoBundle 'tomasr/molokai'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'basyura/unite-rails'
+NeoBundle 'Lokaltog/powerline'
+NeoBundle 'tpope/vim-endwise'
+NeoBundle 'vim-scripts/ruby-matchit'
 
 syntax on
 filetype plugin indent on
@@ -72,9 +80,9 @@ set encoding=utf-8
 set fileencoding=utf-8
 set fileformat=unix
 set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 
 noremap j gj
 noremap k gk
@@ -89,3 +97,8 @@ autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:las
 "clipboard
 set clipboard=unnamed,autoselect
 
+"powerline
+set laststatus=2
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+let g:Powerline_symbols = 'fancy'
+set noshowmode
