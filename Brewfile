@@ -4,18 +4,27 @@ update
 # update formula
 upgrade
 
-# install formula
-install zsh || true
-install git || true
-install openssl || true
-install tmux || true
-install reattach-to-user-namespace || true
-install mecab || true
-install mysql || true
+# install homebrew-binary
+tap homebrew/binary
 
-# install homebrew-cask
-tap phinze/homebrew-cask
-install brew-cask
+# install formula
+install zsh
+install git
+install openssl
+install tmux
+install reattach-to-user-namespace
+install rbenv
+install ruby-build
+install plenv
+install perl-build
+install pyenv
+install mecab
+install mysql
+install redis
+install heroku-toolbelt
+install docker
+install boot2docker
+install jenkins
 
 # install macvim-kaoriya
 tap supermomonga/homebrew-splhack
@@ -25,14 +34,22 @@ install gettext-mk
 install --HEAD macvim-kaoriya
 linkapps
 
+# install homebrew-cask
+tap phinze/homebrew-cask
+install brew-cask
+
+# install launchrocket
+tap jimbojsb/launchrocket
+cask install launchrocket
+
 # install dmg package
-cask install google-chrome
 cask install iterm2
+cask install dropbox
+cask install google-japanese-ime
+cask install coteditor
+cask install java
 cask install virtualbox
 cask install vagrant
-cask install java
-cask install dropbox
 
 # cleanup formula
 cleanup
-
