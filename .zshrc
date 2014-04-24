@@ -40,5 +40,7 @@ SPROMPT="correct: %R -> %r ? "
 
 bindkey -v
 
-setopt nullglob
+# Ctrl+R incremental search
+bindkey "^R" history-incremental-search-backward
 
+setopt nullglob
