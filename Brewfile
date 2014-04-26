@@ -27,6 +27,7 @@ install boot2docker
 install jenkins
 install packer
 install jq
+install elasticsearch
 
 # install macvim-kaoriya
 tap supermomonga/homebrew-splhack
