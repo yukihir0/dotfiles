@@ -53,6 +53,7 @@ cask install coteditor
 cask install java
 cask install virtualbox
 cask install vagrant
+cask install mysqlworkbench
 
 # cleanup formula
 cleanup
