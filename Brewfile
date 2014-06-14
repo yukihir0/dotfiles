@@ -22,8 +22,6 @@ install mecab
 install mysql
 install redis
 install heroku-toolbelt
-install docker
-install boot2docker
 install jenkins
 install packer
 install jq
@@ -54,6 +52,7 @@ cask install java
 cask install virtualbox
 cask install vagrant
 cask install mysqlworkbench
+cask install boot2docker
 
 # cleanup formula
 cleanup
