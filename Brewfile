@@ -53,6 +53,8 @@ cask install virtualbox
 cask install vagrant
 cask install mysqlworkbench
 cask install boot2docker
+cask install xquartz
+cask install inkscape
 
 # cleanup formula
 cleanup
