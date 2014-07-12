@@ -43,6 +43,10 @@ install brew-cask
 tap jimbojsb/launchrocket
 cask install launchrocket
 
+# install peco
+tap peco/peco
+install peco
+
 # install dmg package
 cask install iterm2
 cask install dropbox
