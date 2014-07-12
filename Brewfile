@@ -10,6 +10,7 @@ tap homebrew/binary
 # install formula
 install zsh
 install git
+install tig
 install openssl
 install tmux
 install reattach-to-user-namespace
