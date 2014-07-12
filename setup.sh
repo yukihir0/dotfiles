@@ -10,6 +10,7 @@ echo "--- link to dot_files from home directory ---"
 dot_files+=(".bundle")
 dot_files+=(".vim")
 dot_files+=(".ssh")
+dot_files+=(".peco")
 
 # file
 dot_files+=(".gitconfig")
@@ -19,6 +20,7 @@ dot_files+=(".vimrc")
 dot_files+=(".zshenv")
 dot_files+=(".zshrc")
 dot_files+=(".gemrc")
+dot_files+=(".tigrc")
 
 for dot_file in "${dot_files[@]}"
 do

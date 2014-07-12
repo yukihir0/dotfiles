@@ -10,6 +10,8 @@ tap homebrew/binary
 # install formula
 install zsh
 install git
+install hub
+install tig
 install openssl
 install tmux
 install reattach-to-user-namespace
@@ -26,6 +28,7 @@ install jenkins
 install packer
 install jq
 install elasticsearch
+install tree
 
 # install macvim-kaoriya
 tap supermomonga/homebrew-splhack
@@ -42,6 +45,10 @@ install brew-cask
 # install launchrocket
 tap jimbojsb/launchrocket
 cask install launchrocket
+
+# install peco
+tap peco/peco
+install peco
 
 # install dmg package
 cask install iterm2
