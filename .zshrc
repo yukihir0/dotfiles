@@ -27,6 +27,7 @@ setopt share_history
 
 zstyle ':vcs_info:*' formats '[%b]'
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
+zstyle ':vcs_info:git:*:-all-' command /usr/local/bin/git
 precmd () {
     psvar=()
     LANG=en_US.UTF-8 vcs_info
@@ -81,3 +82,6 @@ function peco-cdr () {
 }
 zle -N peco-cdr
 bindkey '^@' peco-cdr
+
+# hub
+function git(){hub "$@"}

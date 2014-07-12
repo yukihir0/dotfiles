@@ -10,6 +10,7 @@ tap homebrew/binary
 # install formula
 install zsh
 install git
+install hub
 install tig
 install openssl
 install tmux

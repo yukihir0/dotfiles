@@ -20,6 +20,7 @@ dot_files+=(".vimrc")
 dot_files+=(".zshenv")
 dot_files+=(".zshrc")
 dot_files+=(".gemrc")
+dot_files+=(".tigrc")
 
 for dot_file in "${dot_files[@]}"
 do
