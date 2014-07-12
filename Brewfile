@@ -26,6 +26,7 @@ install jenkins
 install packer
 install jq
 install elasticsearch
+install tree
 
 # install macvim-kaoriya
 tap supermomonga/homebrew-splhack
