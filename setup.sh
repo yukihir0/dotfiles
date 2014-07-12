@@ -10,6 +10,7 @@ echo "--- link to dot_files from home directory ---"
 dot_files+=(".bundle")
 dot_files+=(".vim")
 dot_files+=(".ssh")
+dot_files+=(".peco")
 
 # file
 dot_files+=(".gitconfig")
