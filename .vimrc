@@ -2,7 +2,9 @@ set notitle
 
 set nocompatible
 filetype off
- 
+
+set lazyredraw
+
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
