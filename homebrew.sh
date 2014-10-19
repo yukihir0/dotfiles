@@ -22,6 +22,7 @@ brew install ruby-build
 brew install plenv
 brew install perl-build
 brew install pyenv
+brew install go
 brew install mecab
 brew install mysql
 brew install redis

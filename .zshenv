@@ -21,6 +21,11 @@ eval "$(plenv init -)"
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 
+# go
+export GOPATH="$HOME/go"
+export GOROOT="/usr/local/opt/go/libexec"
+export PATH="$GOPATH/bin:$GOROOT/bin:$PATH"
+
 # ssh-agentd
 SOCK="/tmp/ssh-agent-$USER"
 if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != $SOCK ]
