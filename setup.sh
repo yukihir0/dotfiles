@@ -39,8 +39,3 @@ do
         `$command`
     fi
 done
-
-echo
-echo "--- copy tmux-pbcopy ---"
-sudo cp tmux-pbcopy /usr/local/bin
-
