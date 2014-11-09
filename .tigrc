@@ -1,2 +1,7 @@
+# git rebase
+bind main    R !git rebase -i %(commit)
+bind diff    R !git rebase -i %(commit)
+
+# hub
 bind main G !@hub browse -- commit/%(commit)
 bind diff G !@hub browse -- commit/%(commit)
