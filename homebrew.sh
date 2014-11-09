@@ -12,6 +12,7 @@ brew tap homebrew/binary
 # install formula
 brew install zsh
 brew install zsh-completions
+brew install zsh-syntax-highlighting
 brew install git
 brew install hub
 brew install tig

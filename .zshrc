@@ -1,33 +1,50 @@
-# zsh-completions
-fpath=(/usr/local/share/zsh-completions $fpath)
-
-autoload -U compinit
-compinit
-
-autoload -U colors
-colors
-
-autoload -Uz vcs_info
-
-export LANG=ja_JP.UTF-8
+# homebrew path
 export PATH=/usr/local/bin:$PATH
 
-export LSCOLORS=gxfxcxdxbxegedabagacad
-export LS_COLORS='di=36:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
-zstyle ':completion:*' list-colors 'di=36' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
+# lang
+export LANG=ja_JP.UTF-8
 
+# editor
+export EDITOR=vi
+
+# basic options
+bindkey -v
+setopt auto_pushd
+setopt ignore_eof
+setopt no_flow_control
+setopt no_beep
+
+# command alias
 alias ls="ls -G"
 alias grep="grep --color"
 alias vi="vim"
 
-setopt auto_pushd
+# completion + zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+autoload -Uz compinit
+compinit
+zstyle ':completion:*:default' menu select=2
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
+# history
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt hist_ignore_dups
 setopt share_history
 
+# color
+autoload -Uz colors
+colors
+export LSCOLORS=gxfxcxdxbxegedabagacad
+export LS_COLORS='di=36:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
+# zsh-syntax-highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# vcs_info
+autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats '[%b]'
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 zstyle ':vcs_info:git:*:-all-' command /usr/local/bin/git
@@ -37,14 +54,11 @@ precmd () {
     [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
 
+# prompt
 PROMPT="%{[34m%}%m:%n%%%{[m%} "
 PROMPT2="%{[32m%}%_%%%{[m%} "
 RPROMPT="%{[34m%}[%C]%{[m%} %1(v|%F{green}%1v%f|)"
 SPROMPT="correct: %R -> %r ? "
-
-bindkey -v
-
-setopt nullglob
 
 # cdr
 autoload -Uz is-at-least
@@ -75,7 +89,7 @@ zle -N peco-select-history
 bindkey '^r' peco-select-history
 
 # peco-cdr
-function peco-cdr () {
+function peco-cdr() {
     local selected_dir=$(cdr -l | awk '{ print $2 }' | peco)
     if [ -n "$selected_dir" ]; then
         BUFFER="cd ${selected_dir}"
@@ -87,4 +101,4 @@ zle -N peco-cdr
 bindkey '^@' peco-cdr
 
 # hub
-function git(){hub "$@"}
+function git() { hub "$@" }
