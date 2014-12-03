@@ -28,6 +28,7 @@ brew install go
 brew install mecab
 brew install mysql
 brew install redis
+brew install mongodb
 brew install heroku-toolbelt
 brew install jenkins
 brew install packer
