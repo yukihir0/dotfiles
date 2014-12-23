@@ -67,6 +67,7 @@ brew cask install mysqlworkbench
 brew cask install boot2docker
 brew cask install xquartz
 brew cask install inkscape
+brew cask install td-agent
 
 # cleanup formula
 brew cleanup
