@@ -31,6 +31,7 @@ NeoBundle 'basyura/unite-rails'
 NeoBundle 'Lokaltog/powerline'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'vim-scripts/ruby-matchit'
+NeoBundle 'sudo.vim'
 
 syntax on
 filetype plugin indent on
