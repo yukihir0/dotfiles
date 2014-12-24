@@ -26,6 +26,7 @@ brew install perl-build
 brew install pyenv
 brew install go
 brew install mecab
+brew install mecab-ipadic
 brew install mysql
 brew install redis
 brew install mongodb
