@@ -4,4 +4,5 @@
 .vim/.netrwhist
 .vendor/bundle
 .ssh/*
-!.ssh/config
+!.ssh/configa
+.tmux/*

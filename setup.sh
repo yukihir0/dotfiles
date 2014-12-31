@@ -11,6 +11,7 @@ dot_files+=(".bundle")
 dot_files+=(".vim")
 dot_files+=(".ssh")
 dot_files+=(".peco")
+dot_files+=(".tmux")
 
 # file
 dot_files+=(".gitconfig")
@@ -38,8 +39,3 @@ do
         `$command`
     fi
 done
-
-echo
-echo "--- copy tmux-pbcopy ---"
-sudo cp tmux-pbcopy /usr/local/bin
-

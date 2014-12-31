@@ -11,6 +11,8 @@ brew tap homebrew/binary
 
 # install formula
 brew install zsh
+brew install zsh-completions
+brew install zsh-syntax-highlighting
 brew install git
 brew install hub
 brew install tig
@@ -24,8 +26,10 @@ brew install perl-build
 brew install pyenv
 brew install go
 brew install mecab
+brew install mecab-ipadic
 brew install mysql
 brew install redis
+brew install mongodb
 brew install heroku-toolbelt
 brew install jenkins
 brew install packer
@@ -64,6 +68,7 @@ brew cask install mysqlworkbench
 brew cask install boot2docker
 brew cask install xquartz
 brew cask install inkscape
+brew cask install td-agent
 
 # cleanup formula
 brew cleanup
