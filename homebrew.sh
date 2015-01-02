@@ -9,6 +9,9 @@ brew upgrade
 # install homebrew-binary
 brew tap homebrew/binary
 
+# install homebrew-science
+brew tap homebrew/science
+
 # install formula
 brew install zsh
 brew install zsh-completions
@@ -36,6 +39,7 @@ brew install packer
 brew install jq
 brew install elasticsearch
 brew install tree
+brew install r
 
 # install macvim-kaoriya
 brew tap supermomonga/homebrew-splhack
@@ -69,6 +73,7 @@ brew cask install boot2docker
 brew cask install xquartz
 brew cask install inkscape
 brew cask install td-agent
+brew cask install rstudio
 
 # cleanup formula
 brew cleanup
