@@ -40,6 +40,8 @@ brew install jq
 brew install elasticsearch
 brew install tree
 brew install r
+brew install docker
+brew install fig
 
 # install macvim-kaoriya
 brew tap supermomonga/homebrew-splhack
