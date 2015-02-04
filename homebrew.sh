@@ -27,7 +27,7 @@ brew install ruby-build
 brew install plenv
 brew install perl-build
 brew install pyenv
-brew install go
+brew install go --cross-compile-all
 brew install mecab
 brew install mecab-ipadic
 brew install mysql
