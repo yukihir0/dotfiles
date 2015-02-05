@@ -32,6 +32,7 @@ NeoBundle 'Lokaltog/powerline'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'vim-scripts/ruby-matchit'
 NeoBundle 'sudo.vim'
+NeoBundle 'fatih/vim-go'
 
 syntax on
 filetype plugin indent on
@@ -106,15 +107,9 @@ set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 let g:Powerline_symbols = 'fancy'
 set noshowmode
 
-"go
-" use goimports instead of gofmt
-let g:gofmt_command = 'goimports'
+"vim-go
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
 
-" use default plugin with go and gocode
-set rtp^=${GOROOT}/misc/vim
-set rtp^=${GOPATH}/src/github.com/nsf/gocode/vim
 
-" :Fmt when save code
-au BufWritePre *.go Fmt
-au BufNewFile,BufRead *.go set sw=4 noexpandtab ts=4
-au FileType go compiler go
