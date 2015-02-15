@@ -42,6 +42,7 @@ brew install tree
 brew install r
 brew install docker
 brew install fig
+brew install watch
 
 # install macvim-kaoriya
 brew tap supermomonga/homebrew-splhack
