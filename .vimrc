@@ -33,6 +33,8 @@ NeoBundle 'tpope/vim-endwise'
 NeoBundle 'vim-scripts/ruby-matchit'
 NeoBundle 'sudo.vim'
 NeoBundle 'fatih/vim-go'
+NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'clausreinke/typescript-tools'
 
 syntax on
 filetype plugin indent on
