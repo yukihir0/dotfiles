@@ -43,6 +43,7 @@ brew install r
 brew install docker
 brew install fig
 brew install watch
+brew install dnsmasq
 
 # install macvim-kaoriya
 brew tap supermomonga/homebrew-splhack
