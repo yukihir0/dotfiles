@@ -78,6 +78,7 @@ brew cask install xquartz
 brew cask install inkscape
 brew cask install td-agent
 brew cask install rstudio
+brew cask install flashlight
 
 # cleanup formula
 brew cleanup
