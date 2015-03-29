@@ -41,7 +41,7 @@ brew install elasticsearch
 brew install tree
 brew install r
 brew install docker
-brew install fig
+brew install docker-compose
 brew install watch
 brew install dnsmasq
 
