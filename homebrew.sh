@@ -16,6 +16,7 @@ brew tap homebrew/science
 brew install zsh
 brew install zsh-completions
 brew install zsh-syntax-highlighting
+brew install wget
 brew install git
 brew install hub
 brew install tig
