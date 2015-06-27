@@ -36,7 +36,6 @@ brew install redis
 brew install mongodb
 brew install heroku-toolbelt
 brew install jenkins
-brew install packer
 brew install jq
 brew install elasticsearch
 brew install tree
@@ -73,6 +72,7 @@ brew cask install coteditor
 brew cask install java
 brew cask install virtualbox
 brew cask install vagrant
+brew cask install packer
 brew cask install mysqlworkbench
 brew cask install boot2docker
 brew cask install xquartz
