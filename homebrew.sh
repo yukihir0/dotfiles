@@ -80,6 +80,7 @@ brew cask install inkscape
 brew cask install td-agent
 brew cask install rstudio
 brew cask install flashlight
+brew cask install processing
 
 # cleanup formula
 brew cleanup
