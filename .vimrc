@@ -35,6 +35,7 @@ NeoBundle 'sudo.vim'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'clausreinke/typescript-tools'
+NeoBundle "sophacles/vim-processing"
 
 syntax on
 filetype plugin indent on
