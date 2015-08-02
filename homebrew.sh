@@ -17,10 +17,14 @@ brew install zsh
 brew install zsh-completions
 brew install zsh-syntax-highlighting
 brew install wget
+brew install jq
+brew install tree
+brew install watch
+brew install openssl
+brew install dnsmasq
 brew install git
 brew install hub
 brew install tig
-brew install openssl
 brew install tmux
 brew install reattach-to-user-namespace
 brew install rbenv
@@ -36,14 +40,9 @@ brew install redis
 brew install mongodb
 brew install heroku-toolbelt
 brew install jenkins
-brew install jq
 brew install elasticsearch
-brew install tree
-brew install r
 brew install docker
 brew install docker-compose
-brew install watch
-brew install dnsmasq
 
 # install macvim-kaoriya
 brew tap supermomonga/homebrew-splhack
@@ -66,20 +65,18 @@ brew install peco
 
 # install dmg package
 brew cask install iterm2
+brew cask install coteditor
 brew cask install dropbox
 brew cask install google-japanese-ime
-brew cask install coteditor
 brew cask install java
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install packer
-brew cask install mysqlworkbench
 brew cask install boot2docker
+brew cask install mysqlworkbench
 brew cask install xquartz
 brew cask install inkscape
 brew cask install td-agent
-brew cask install rstudio
-brew cask install flashlight
 brew cask install processing
 
 # cleanup formula

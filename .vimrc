@@ -35,6 +35,7 @@ NeoBundle 'sudo.vim'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'clausreinke/typescript-tools'
+NeoBundle "sophacles/vim-processing"
 
 syntax on
 filetype plugin indent on
@@ -113,5 +114,4 @@ set noshowmode
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
-
-
+let g:go_fmt_command = "goimports"
