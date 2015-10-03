@@ -1,5 +1,6 @@
 # homebrew path
 export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
 
 # lang
 export LANG=ja_JP.UTF-8
