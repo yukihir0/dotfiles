@@ -41,8 +41,6 @@ brew install mongodb
 brew install heroku-toolbelt
 brew install jenkins
 brew install elasticsearch
-brew install docker
-brew install docker-compose
 
 # install macvim-kaoriya
 brew tap supermomonga/homebrew-splhack
@@ -72,7 +70,7 @@ brew cask install java
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install packer
-brew cask install boot2docker
+brew cask install dockertoolbox
 brew cask install mysqlworkbench
 brew cask install xquartz
 brew cask install inkscape
