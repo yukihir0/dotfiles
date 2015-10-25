@@ -1,5 +1,9 @@
 typeset -U PATH
 
+# homebrew path
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+
 # vim
 if [ -f /Applications/MacVim.app/Contents/MacOS/Vim ]; then
   alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
