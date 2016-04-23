@@ -41,6 +41,7 @@ brew install mongodb
 brew install heroku-toolbelt
 brew install jenkins
 brew install elasticsearch
+brew install awscli
 
 # install macvim-kaoriya
 brew tap supermomonga/homebrew-splhack
