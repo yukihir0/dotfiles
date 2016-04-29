@@ -71,6 +71,7 @@ brew cask install java
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install packer
+brew cask install terraform
 brew cask install dockertoolbox
 brew cask install mysqlworkbench
 brew cask install xquartz
