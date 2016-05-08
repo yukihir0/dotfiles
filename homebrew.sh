@@ -42,6 +42,7 @@ brew install heroku-toolbelt
 brew install jenkins
 brew install elasticsearch
 brew install awscli
+brew install ffmpeg
 
 # install macvim-kaoriya
 brew tap supermomonga/homebrew-splhack
