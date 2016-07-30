@@ -81,5 +81,11 @@ brew cask install inkscape
 brew cask install td-agent
 brew cask install processing
 
+# ergodox
+brew tap osx-cross/avr
+brew install avr-libc
+brew install dfu-programmer
+brew install teensy_loader_cli
+
 # cleanup formula
 brew cleanup
