@@ -37,6 +37,7 @@ brew install elixir
 brew install mecab
 brew install mecab-ipadic
 brew install mysql
+brew install postgres
 brew install redis
 brew install mongodb
 brew install heroku-toolbelt
