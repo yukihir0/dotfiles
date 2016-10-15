@@ -34,6 +34,7 @@ brew install perl-build
 brew install pyenv
 brew install go --cross-compile-all
 brew install elixir
+brew install rust
 brew install mecab
 brew install mecab-ipadic
 brew install mysql
