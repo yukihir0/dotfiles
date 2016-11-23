@@ -48,12 +48,10 @@ brew install awscli
 brew install ffmpeg
 
 # install macvim-kaoriya
-brew tap supermomonga/homebrew-splhack
-brew install --HEAD cmigemo-mk
-brew install --HEAD ctags-objc-ja
-brew install gettext-mk
-brew install --HEAD macvim-kaoriya
-brew linkapps
+brew tap universal-ctags/universal-ctags
+brew tap splhack/homebrew-splhack
+brew install --HEAD universal-ctags
+brew install --HEAD splhack/splhack/macvim-kaoriya
 
 # install homebrew-cask
 brew install caskroom/cask/brew-cask
