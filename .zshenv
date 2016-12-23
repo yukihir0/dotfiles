@@ -33,6 +33,9 @@ eval "$(goenv init -)"
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 
+# rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # ssh-agentd
 SOCK="/tmp/ssh-agent-$USER"
 if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != $SOCK ]
