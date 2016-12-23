@@ -1,4 +1,5 @@
 typeset -U PATH
+setopt no_global_rcs
 
 # homebrew path
 export PATH=/usr/local/bin:$PATH
@@ -27,9 +28,10 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 
 # go
+export PATH="$HOME/.goenv/bin:$PATH"
+eval "$(goenv init -)"
 export GOPATH="$HOME/go"
-export GOROOT="/usr/local/opt/go/libexec"
-export PATH="$GOPATH/bin:$GOROOT/bin:$PATH"
+export PATH="$GOPATH/bin:$PATH"
 
 # ssh-agentd
 SOCK="/tmp/ssh-agent-$USER"
