@@ -53,7 +53,7 @@ precmd () {
 }
 
 # prompt
-PROMPT="%{[34m%}%m:%n%%%{[m%} "
+PROMPT="%{[34m%}%m%%%{[m%} "
 PROMPT2="%{[32m%}%_%%%{[m%} "
 RPROMPT="%{[34m%}[%C]%{[m%} %1(v|%F{green}%1v%f|)"
 SPROMPT="correct: %R -> %r ? "
