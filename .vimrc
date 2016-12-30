@@ -81,6 +81,7 @@ endif
 
 set modeline
 set nobackup
+set noundofile
 set incsearch
 set smartcase
 set showmatch
