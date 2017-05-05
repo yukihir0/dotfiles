@@ -44,3 +44,6 @@ then
   ln -sf $SSH_AUTH_SOCK $SOCK
   export SSH_AUTH_SOCK=$SOCK
 fi
+
+# prevent warning brew doctor: exclude pyenv from PATH
+alias brew="env PATH=${PATH/${HOME}\/\.pyenv\/shims:/} brew"
