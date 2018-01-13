@@ -6,3 +6,4 @@
 .ssh/*
 !.ssh/configa
 .tmux/*
+.bundle
