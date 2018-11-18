@@ -38,6 +38,7 @@ NeoBundle 'clausreinke/typescript-tools'
 NeoBundle 'sophacles/vim-processing'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'rust-lang/rust.vim'
+NeoBundle 'lambdalisue/vim-gista'
 
 syntax on
 filetype plugin indent on
@@ -124,3 +125,6 @@ let g:go_fmt_command = "goimports"
 
 "rust.vim
 let g:rustfmt_autosave = 1
+
+"vim-gista
+let g:gista#client#default_username = "yukihir0"
