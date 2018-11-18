@@ -36,6 +36,9 @@ export PATH="$GOPATH/bin:$PATH"
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# postgresql@9.6
+export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
+
 # ssh-agentd
 SOCK="/tmp/ssh-agent-$USER"
 if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != $SOCK ]
