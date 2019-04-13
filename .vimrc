@@ -28,7 +28,6 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'basyura/unite-rails'
-NeoBundle 'powerline/powerline'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'vim-scripts/ruby-matchit'
 NeoBundle 'sudo.vim'
@@ -39,6 +38,7 @@ NeoBundle 'sophacles/vim-processing'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'rust-lang/rust.vim'
 NeoBundle 'lambdalisue/vim-gista'
+NeoBundle 'Lokaltog/vim-powerline'
 
 syntax on
 filetype plugin indent on
@@ -111,12 +111,6 @@ autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:las
 "clipboard
 set clipboard=unnamed,autoselect
 
-"powerline
-set laststatus=2
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-let g:Powerline_symbols = 'fancy'
-set noshowmode
-
 "vim-go
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -128,3 +122,8 @@ let g:rustfmt_autosave = 1
 
 "vim-gista
 let g:gista#client#default_username = "yukihir0"
+
+" lightline.vim
+let g:lightline = {
+  \ 'colorscheme': 'wombat'
+  \ }

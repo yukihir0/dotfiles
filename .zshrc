@@ -4,6 +4,9 @@ export LANG=ja_JP.UTF-8
 # editor
 export EDITOR=vi
 
+# terminal
+export TERM=xterm-256color
+
 # basic options
 bindkey -v
 setopt auto_pushd
@@ -53,9 +56,9 @@ precmd () {
 }
 
 # prompt
-PROMPT="%{[34m%}%m%%%{[m%} "
+PROMPT="%{[32m%}%m%%%{[m%} "
 PROMPT2="%{[32m%}%_%%%{[m%} "
-RPROMPT="%{[34m%}[%C]%{[m%} %1(v|%F{green}%1v%f|)"
+RPROMPT="%{[32m%}[%C]%{[m%} %1(v|%F{green}%1v%f|)"
 SPROMPT="correct: %R -> %r ? "
 
 # cdr
