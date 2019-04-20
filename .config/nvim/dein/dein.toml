@@ -1,0 +1,61 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+## auto complete
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+hook_add = '''
+  if !has('nvim')
+    call dein#add('roxma/nvim-yarp')
+    call dein#add('roxma/vim-hug-neovim-rpc')
+  endif
+  "let g:deoplete#enable_at_startup = 1
+'''
+
+## color scheme
+[[plugins]]
+repo = 'tomasr/molokai'
+hook_add = '''
+    syntax on
+    colorscheme molokai
+'''
+
+## vim status line
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+  let g:lightline = {'colorscheme': 'wombat'}
+'''
+
+# programming
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+
+## rust
+[[plugins]]
+repo = 'rust-lang/rust.vim'
+
+## golang
+[[plugins]]
+repo = 'fatih/vim-go'
+hook_add = '''
+  let g:go_highlight_functions = 1
+  let g:go_highlight_methods = 1
+  let g:go_highlight_structs = 1
+  let g:go_fmt_command = "goimports"
+'''
+
+## elixir 
+[[plugins]]
+repo = 'elixir-lang/vim-elixir'
+
+## typescrypt
+repo = 'leafgarland/typescript-vim'
+
+## toml
+[[plugins]]
+repo  = 'cespare/vim-toml'
+hook_add = '''
+  let g:rustfmt_autosave = 1
+'''

@@ -8,3 +8,6 @@
 !.ssh/configa
 .tmux/*
 .bundle
+.config/configstore
+.config/wireshark
+.netrwhist

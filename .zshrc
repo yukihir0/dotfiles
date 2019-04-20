@@ -17,7 +17,8 @@ setopt no_beep
 # command alias
 alias ls="ls -G"
 alias grep="grep --color"
-alias vi="vim"
+alias vi='nvim'
+alias vim="nvim"
 
 # completion + zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)

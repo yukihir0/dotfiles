@@ -8,16 +8,15 @@ echo "--- link to dot_files from home directory ---"
 
 # directory
 dot_files+=(".bundle")
-dot_files+=(".vim")
 dot_files+=(".ssh")
 dot_files+=(".peco")
 dot_files+=(".tmux")
+dot_files+=(".config")
 
 # file
 dot_files+=(".gitconfig")
 dot_files+=(".gitignore")
 dot_files+=(".tmux.conf")
-dot_files+=(".vimrc")
 dot_files+=(".zshenv")
 dot_files+=(".zshrc")
 dot_files+=(".gemrc")
