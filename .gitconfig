@@ -15,3 +15,5 @@
   cm = commit
   co = checkout
   st = status
+[ghq]
+  root = ~/.ghq

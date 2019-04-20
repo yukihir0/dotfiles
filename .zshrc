@@ -105,5 +105,17 @@ bindkey '^@' peco-cdr
 # peco-git-branch
 alias -g lb='`git branch | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
 
+# peco-ghq-src
+function peco-ghq-src () {
+  local selected_dir=$(ghq list -p | peco --query "$LBUFFER")
+  if [ -n "$selected_dir" ]; then
+    BUFFER="cd ${selected_dir}"
+    zle accept-line
+  fi
+  zle clear-screen
+}
+zle -N peco-ghq-src
+bindkey '^]' peco-ghq-src
+
 # hub
 function git() { hub "$@" }
