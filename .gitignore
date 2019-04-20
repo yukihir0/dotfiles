@@ -2,7 +2,12 @@
 .DS_Store
 .vim/bundle
 .vim/.netrwhist
+.vim/view
 .vendor/bundle
 .ssh/*
 !.ssh/configa
 .tmux/*
+.bundle
+.config/configstore
+.config/wireshark
+.netrwhist

@@ -1,11 +1,11 @@
-# homebrew path
-export PATH=/usr/local/bin:$PATH
-
 # lang
 export LANG=ja_JP.UTF-8
 
 # editor
 export EDITOR=vi
+
+# terminal
+export TERM=xterm-256color
 
 # basic options
 bindkey -v
@@ -17,7 +17,8 @@ setopt no_beep
 # command alias
 alias ls="ls -G"
 alias grep="grep --color"
-alias vi="vim"
+alias vi='nvim'
+alias vim="nvim"
 
 # completion + zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
@@ -31,6 +32,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt hist_ignore_dups
+setopt hist_ignore_space
 setopt share_history
 
 # color
@@ -55,9 +57,9 @@ precmd () {
 }
 
 # prompt
-PROMPT="%{[34m%}%m:%n%%%{[m%} "
+PROMPT="%{[32m%}%m%%%{[m%} "
 PROMPT2="%{[32m%}%_%%%{[m%} "
-RPROMPT="%{[34m%}[%C]%{[m%} %1(v|%F{green}%1v%f|)"
+RPROMPT="%{[32m%}[%C]%{[m%} %1(v|%F{green}%1v%f|)"
 SPROMPT="correct: %R -> %r ? "
 
 # cdr
@@ -99,6 +101,9 @@ function peco-cdr() {
 }
 zle -N peco-cdr
 bindkey '^@' peco-cdr
+
+# peco-git-branch
+alias -g lb='`git branch | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
 
 # hub
 function git() { hub "$@" }

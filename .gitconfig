@@ -5,8 +5,13 @@
 	ui = auto
 [core]
 	excludesfile = /Users/yukihir0/.gitignore
-	editor = /Applications/MacVim.app/Contents/MacOS/Vim
+	editor = vim -c \"set fenc=utf-8\"
 [filter "media"]
 	required = true
 	clean = git media clean %f
-	smudge = git media smudge %f
+  smudge = git media smudge %f
+[alias]
+  br = branch
+  cm = commit
+  co = checkout
+  st = status
