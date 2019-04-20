@@ -102,5 +102,8 @@ function peco-cdr() {
 zle -N peco-cdr
 bindkey '^@' peco-cdr
 
+# peco-git-branch
+alias -g lb='`git branch | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
+
 # hub
 function git() { hub "$@" }
