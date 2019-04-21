@@ -14,6 +14,14 @@ hook_add = '''
   endif
   let g:deoplete#enable_at_startup = 1
   let g:deoplete#auto_complete_delay = 0
+  let g:deoplete#auto_complete_start_length = 1
+  let g:deoplete#enable_camel_case = 0
+  let g:deoplete#enable_ignore_case = 0
+  let g:deoplete#enable_refresh_always = 0
+  let g:deoplete#enable_smart_case = 1
+  let g:deoplete#file#enable_buffer_path = 1
+  let g:deoplete#max_list = 10000
+
   inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 '''
 
@@ -27,10 +35,22 @@ hook_add = '''
 	let g:LanguageClient_loadSettings = 1
   let g:LanguageClient_serverCommands = {
       \ 'ruby': ['solargraph', 'stdio'],
+      \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
   \}
   call deoplete#custom#var('omni', 'input_patterns', {
       \ 'ruby': ['[^. *\t]\.\w*', '[a-zA-Z_]\w*::'],
   \})
+
+  augroup LanguageClient_config
+      autocmd!
+      autocmd User LanguageClientStarted setlocal signcolumn=yes
+      autocmd User LanguageClientStopped setlocal signcolumn=auto
+  augroup END
+
+  nnoremap <silent> <Space>lh :call LanguageClient_textDocument_hover()<CR>
+  nnoremap <silent> <Space>ld :call LanguageClient_textDocument_definition()<CR>
+  nnoremap <silent> <Space>lr :call LanguageClient_textDocument_rename()<CR>
+  nnoremap <silent> <Space>lf :call LanguageClient_textDocument_formatting()<CR>
 '''
 
 ## color scheme
