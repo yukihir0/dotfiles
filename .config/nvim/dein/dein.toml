@@ -1,3 +1,6 @@
+# basic plugin
+
+## plugin manager
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
@@ -27,8 +30,10 @@ hook_add = '''
   let g:lightline = {'colorscheme': 'wombat'}
 '''
 
+
 # programming
 
+## ruby
 [[plugins]]
 repo = 'tpope/vim-endwise'
 

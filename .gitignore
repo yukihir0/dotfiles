@@ -5,9 +5,10 @@
 .vim/view
 .vendor/bundle
 .ssh/*
-!.ssh/configa
+!.ssh/config
 .tmux/*
-.bundle
+.bundle/*
+!.bundle/config
 .config/configstore
 .config/wireshark
 .netrwhist
