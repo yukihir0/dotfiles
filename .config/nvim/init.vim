@@ -1,9 +1,87 @@
-set notitle
+" --- basic setting ---
+
+" disable vi compatible
 set nocompatible
+
+" disable detect file type
 filetype off
+
+" disable create vi file
+set nobackup
+set noundofile
+
+" file encode
+set encoding=utf-8
+set fileencoding=utf-8
+
+" LF
+set fileformat=unix
+
+" tab
+set expandtab
+set smarttab
+set shiftround
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+
+" serch & replace
+set ignorecase
+set smartcase
+set wrapscan
+set incsearch
+set inccommand=split
+
+" enable clipboard
+set clipboard=unnamed
+
+" enable backspace in insert mode
+set backspace=eol,indent,start
+
+" disable automatic line feed
+set textwidth=0
+
+
+" --- display setting ---
+
+" disable title
+set notitle
+
+" highlight corsor line
+set cursorline
+
+" highlight match bracket
+set showmatch
+
+
+" --- key map setting ---
+
+" nomal mode / visual mode
+noremap j gj
+noremap k gk
+noremap gj j
+noremap gk k
+
+" insert mode
+imap <C-h> <C-x><C-o>
+imap <C-j> <esc>
+
+
+" ---  workaround ---
+
+" disable redraw(scroll speed up)
 set lazyredraw
 
-"dein Scripts-----------------------------
+" disable foldmethod in insert mode(reduce cpu)
+autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
+autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
+
+
+" --- matcht.vim ---
+runtime macros/matchit.vim
+
+
+" --- dein.vim ---
 if &compatible
   set nocompatible
 endif
@@ -33,42 +111,6 @@ endif
 filetype plugin indent on
 syntax enable
 
-" Install not installed plugins on startup.
 if dein#check_install()
   call dein#install()
 endif
-
-"End dein Scripts-------------------------
-
-set modeline
-set nobackup
-set noundofile
-set incsearch
-set smartcase
-set showmatch
-set backspace=eol,indent,start
-set cursorline
-set textwidth=0
-set clipboard=unnamed
-
-set encoding=utf-8
-set fileencoding=utf-8
-set fileformat=unix
-set expandtab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-
-noremap j gj
-noremap k gk
-noremap gj j
-noremap gk k
-
-imap <C-h> <C-x><C-o>
-imap <C-j> <esc>
-
-autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
-autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
-
-runtime macros/matchit.vim
-
