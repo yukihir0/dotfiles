@@ -22,3 +22,44 @@ hook_post_source = '''
  
   call denite#custom#option('default', 'prompt', '>')
 '''
+
+
+# programming
+
+## ruby
+[[plugins]]
+repo = 'tpope/vim-endwise'
+on_ft = 'ruby'
+
+## rust
+[[plugins]]
+repo = 'rust-lang/rust.vim'
+on_ft = 'rust'
+
+## golang
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = 'go'
+hook_add = '''
+  let g:go_highlight_functions = 1
+  let g:go_highlight_methods = 1
+  let g:go_highlight_structs = 1
+  let g:go_fmt_command = "goimports"
+'''
+
+## elixir 
+[[plugins]]
+repo = 'elixir-lang/vim-elixir'
+on_ft = 'elixir'
+
+## typescrypt
+repo = 'leafgarland/typescript-vim'
+on_ft = 'typescript'
+
+## toml
+[[plugins]]
+repo  = 'cespare/vim-toml'
+on_ft = 'toml'
+hook_add = '''
+  let g:rustfmt_autosave = 1
+'''
