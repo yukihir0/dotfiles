@@ -5,7 +5,7 @@ export LANG=ja_JP.UTF-8
 export EDITOR=vi
 
 # terminal
-export TERM=xterm-256color
+export TERM=screen-256color
 
 # basic options
 bindkey -v
