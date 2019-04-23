@@ -12,3 +12,4 @@
 .config/configstore
 .config/wireshark
 .netrwhist
+node_modules

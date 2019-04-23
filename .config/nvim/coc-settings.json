@@ -1,0 +1,11 @@
+{
+  "suggest.triggerAfterInsertEnter": true,
+	"suggest.timeout": 500,
+  "suggest.noselect": false,
+  "languageserver": {
+    "rust": {
+      "command": "rls",
+      "filetypes": ["rust"]
+    }
+  }
+}

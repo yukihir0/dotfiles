@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "coc-json": "^1.0.14",
+    "coc-solargraph": "^1.0.7"
+  }
+}
