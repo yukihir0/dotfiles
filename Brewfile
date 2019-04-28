@@ -3,15 +3,13 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "osx-cross/avr"
 tap "universal-ctags/universal-ctags"
 brew "autoconf"
 brew "automake"
+brew "avr-binutils"
 brew "gmp"
 brew "libmpc"
-brew "osx-cross/avr/avr-binutils"
-brew "osx-cross/avr/avr-gcc"
-brew "avr-libc"
+brew "avr-gcc"
 brew "c-ares"
 brew "gettext"
 brew "libffi"
@@ -76,7 +74,6 @@ brew "rebar3"
 brew "redis"
 brew "ruby", link: true
 brew "sbt"
-brew "teensy_loader_cli"
 brew "terraform"
 brew "the_silver_searcher"
 brew "tig"
@@ -87,6 +84,7 @@ brew "watchman"
 brew "wget"
 brew "yarn"
 brew "youtube-dl"
+brew "zlib"
 brew "zsh"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
@@ -123,6 +121,7 @@ mas "com.omnigroup.OmniFocus2.MacAppStore", id: 867299399
 mas "com.omnigroup.OmniFocus3.MacAppStore", id: 1346203938
 mas "com.readdle.smartemail-Mac", id: 1176895641
 mas "com.readitlater.PocketMac", id: 568494494
+mas "com.reederapp.macOS", id: 1449412482
 mas "com.reederapp.rkit2.mac", id: 880001334
 mas "com.tinyspeck.slackmacgap", id: 803453959
 mas "com.twitter.TweetDeck", id: 485812721
