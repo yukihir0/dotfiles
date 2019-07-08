@@ -59,6 +59,11 @@ on_ft = 'elixir'
 repo = 'leafgarland/typescript-vim'
 on_ft = 'typescript'
 
+## vue
+[[plugins]]
+repo = 'posva/vim-vue'
+on_ft = 'vue'
+
 ## toml
 [[plugins]]
 repo  = 'cespare/vim-toml'
