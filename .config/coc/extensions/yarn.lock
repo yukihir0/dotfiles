@@ -21,10 +21,10 @@ coc-json@^1.0.15:
     vscode-languageserver "^5.3.0-next.2"
     vscode-uri "^1.0.6"
 
-coc-solargraph@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/coc-solargraph/-/coc-solargraph-1.1.2.tgz#8ca580495de63d3157c260f642a37f4d3fd37c50"
-  integrity sha512-Cmh5zrp7paE+rIR8ogHDJBsPjzpB0yg0RfZT195WVwsV2leCkVvrCIhNTXUi9CV2XKOkIkXAONZ7EbAsySCHdg==
+coc-solargraph@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/coc-solargraph/-/coc-solargraph-1.1.4.tgz#539842b1cea9a2a42484061cbd81c6363fbb6dc4"
+  integrity sha512-5kBJ5AuluE5Ztv5lFpIs9iPOdDQdAE4mH0qu2OtLgDB5wT3a3D9/6sfbMAkdCggM+r+hbIc9o+k8RId1sPv/WQ==
 
 debug@3.1.0:
   version "3.1.0"

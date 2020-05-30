@@ -8,6 +8,10 @@ export PATH=/usr/local/sbin:$PATH
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+for D in `ls $HOME/.ndenv/shims`
+do
+  export PATH="$HOME/.ndenv/shims:$PATH"
+done
 
 # ndenv
 export PATH="$HOME/.ndenv/bin:$PATH"
@@ -20,6 +24,9 @@ eval "$(plenv init -)"
 # pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
+
+# pip
+export PATH=~/.local/bin:$PATH
 
 # go
 export PATH="$HOME/.goenv/bin:$PATH"
